@@ -1,2 +1,2 @@
-# AltDocpl
-Alternative Docpl Prolog documentation fixes some Latex clashes 
+# AltPldoc
+Alternative pldoc Prolog documentation for SWI Prolog, fixes some Latex clashes 
