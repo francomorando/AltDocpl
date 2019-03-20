@@ -18,16 +18,12 @@ So in your LaTeX file you must add :
 \usepackage{graphicx}
 \usepackage{hyperref}
 \usepackage{pldoc}
-function fancyAlert(arg) {
-  if(arg) {
-    $.facebox({div:'#foo'})
-  }
-}
+...
+\input{myfile.tex}
+...
 ```
->\usepackage{graphicx}
->\usepackage{hyperref}
->\usepackage{pldoc}
-You must install pldoc.sty in the LaTeX search path or 
+Then, when typesetting, you must install pldoc.sty in the LaTeX search path or 
 simply put it in the folder where the .tex files are. 
+
 This package also treats =|sometext|= as a strict verbatim, so in the .tex file you will found sometext whatever you put there.
 Original package did some editing of this text.
