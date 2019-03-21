@@ -26,4 +26,4 @@ Finally, when typesetting, you must install pldoc.sty in the LaTeX search path o
 simply put it in the folder where the .tex files are. 
 
 This package also treats =|$OMETEXT|= as a strict verbatim, so in the .tex file you will find $OMETEXT whatever you put there.
-Original package did some editing of this kind text.
+Original package did some editing of this kind of text between =| and |=.
