@@ -116,7 +116,7 @@ current_options([]).
 
 latexfix:-
  current_options(Options),
- select_option(latexfix(true), Options, _, _). % latexfix
+ select(latexfix(true), Options, _). % latexfix
 %!  doc_latex(+Spec, +OutFile, +Options) is det.
 %
 %   Process one or  more  objects,  writing   the  LaTeX  output  to
@@ -154,7 +154,7 @@ latexfix:-
 %       Same as modules([Module]).
 %     - latexfix(+Bool) If =true= use pldoctag instead of tag in latex.
 %       and equal-pipe sequence bracketing works as a verbatim for All
-%       characters. Defaults to =true= 
+%       characters. Defaults to =false= 
 
 doc_latex(Spec, OutFile, Options) :-
     load_urldefs,
@@ -1669,6 +1669,8 @@ latex_footer(Out, Options) :-
 
 header('\\documentclass[11pt]{article}').
 header('\\usepackage{times}').
+header('\\usepackage{graphicx}').
+header('\\usepackage{hyperref}').
 header('\\usepackage{pldoc}').
 header('\\sloppy').
 header('\\makeindex').
