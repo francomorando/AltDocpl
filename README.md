@@ -6,8 +6,6 @@ This pldoc alternative implementation fixes some possible LaTeX clashes.
 In file docgen.pl there is an example of a goal to output .tex documentation.
 This goal will create myfile.tex and myotherfile.tex.
 
-W.r.t. SWI-Prolog original behaviour, this patch resolve \tag clash 
-with AMS package. \tag is renamed to \pldoctag.
 
 ## Getting Started
 Included is a modified pldoc.sty TeX package that defines \pldoctag.
