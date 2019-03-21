@@ -13,7 +13,7 @@ with AMS package. \tag is renamed to \pldoctag.
 Included is a modified pldoc.sty TeX package that defines \pldoctag.
 Patch is activated by the option latexfix(true) as reported in the 
 docgen.pl example. 
-So in your LaTeX file you must add :
+Then in your LaTeX file you must add :
 ```javascript
 \usepackage{graphicx}
 \usepackage{hyperref}
@@ -22,7 +22,7 @@ So in your LaTeX file you must add :
 \input{myfile.tex}
 ...
 ```
-Then, when typesetting, you must install pldoc.sty in the LaTeX search path or 
+Finally, when typesetting, you must install pldoc.sty in the LaTeX search path or 
 simply put it in the folder where the .tex files are. 
 
 This package also treats =|$OMETEXT|= as a strict verbatim, so in the .tex file you will find $OMETEXT whatever you put there.
